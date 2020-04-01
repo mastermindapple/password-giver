@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            hyper{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <button onclick="validate()">Proceed</button>
+        </center>
+        <script>
+            function validate(){
+                var password = document.getElementById("password").value;
+                if(!password){
+                    document.write("You are a fraud and this site is not for cheaters");
+                }
+                else if(password === "mygirlfriend"){
+                    document.write('<a href="main.html" id="hyper">Proceed</a>')
+                }
+                else{
+                    document.write("You are a fraud and this site is not for cheaters");
+                }
+            }
+        </script>
+    </body>
+</html>

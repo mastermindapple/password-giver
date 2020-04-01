@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <img src="locked.jpg">
+        <style>
+                        body{
+            /* The image used */
+            background-image: url("locked.jpg");
+
+            /* Full height */
+            height: 100%; 
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            #area{
+                transform: translateY(-500px);
+            }
+            #input{
+                width: 800px;
+                text-align: center;
+                animation: enter 2s both ease-out;
+                height: 50px;
+                background-color: rgb(51,179,61);               
+                font-family: Hind Silliguri;
+                font-size: 40px;
+                border: none;
+                transition: 1s;
+            }
+            #input:hover{
+                width: 810px;
+                height: 60px;
+                cursor: pointer;
+            }
+            #button{
+                height: 150px;
+                width: 150px;
+                animation: button 2s both 1s; 
+                transform:translateY(100px);
+                background-color: rgb(51,179,61); 
+                border:none;
+                border-radius: 20%;
+                transition: 1s;
+                font-size: 33px;
+                text-align: center;
+            }
+            #button:hover{
+                border-radius: 50%;
+                background-color: yellowgreen;
+                font-size: 30px;
+                cursor:pointer;
+            }
+
+            @keyframes enter{
+                0%{transform: translateY(100%)};
+            }
+            @keyframes button{
+                0%{opacity: 0%};
+                50%{opacity: 50%};
+                100%{opacity: 100%};
+            }
+            
+        </style>
+    </head>
+    <body>
+        <center>
+            <input type="text" id="input" placeholder="Enter Your Account For Your Password">
+            <br>
+            <button onclick="get()" id="button">Get Password</button> 
+            <br>
+            <textarea id="area"></textarea>
+        </center>
+        <script>
+
+            function get(){
+                var account = document.getElementById("input").value;
+                var password = document.getElementById("password");
+                var area = document.getElementById("area");
+
+            if(account === "dhingrajanavllc@gmail.com"){
+                   area.innerHTML = ("merapyaraxboxonex");
+                    area.select();
+                    area.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    console.log("done")
+                    alert("Your password is copied to clipboard");
+            }
+
+           else if(account === "dhingrajanavllc@outlook.com"){
+                   area.innerHTML = ("music0987654321");
+                    area.select();
+                    area.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    console.log("done")
+                    alert("Your password is copied to clipboard");
+            }
+
+           else if(account === "janav118617@dpsgurgaon.org"){
+                   area.innerHTML = ("student@123");
+                    area.select();
+                    area.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    console.log("done")
+                    alert("Your password is copied to clipboard");
+            }
+
+           else if(account === "dhingradivijllc@outlook.com"){
+                   area.innerHTML = ("xboxonex1");
+                    area.select();
+                    area.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    console.log("done")
+                    alert("Your password is copied to clipboard");
+            }
+
+           else if(account === "DIVIJDHINGRA@suncityschool.onmicrosoft.com"){
+                   area.innerHTML = ("divijJANAV_1234");
+                    area.select();
+                    area.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    console.log("done")
+                    alert("Your password is copied to clipboard");
+            }
+            else if(!account){
+                alert("Please enter your account for password");
+            }
+            else{
+                alert("This account is not registered with us");
+            }
+
+            }
+        </script>
+    </body>
+</html>
